@@ -101,7 +101,7 @@ const App = ({ signOut, user }) => {
 
         style={styles.input}
         value={formState.description}
-        placeholder="R$109,90"
+        placeholder="R$109,00"
         disabled
       />
       <button style={styles.button} onClick={addTodo}>Contratar</button>
