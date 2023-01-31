@@ -6,7 +6,49 @@ import { listTodos } from './graphql/queries'
 import { withAuthenticator, Button, Heading } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
 
-import awsExports from "./aws-exports";
+const awsExports = {
+    "aws_project_region": REACT_APP_PROJECT_REGION,
+    "aws_cognito_identity_pool_id": REACT_APP_COGNITO_IDENTITY_POOL_ID,
+    "aws_cognito_region": REACT_APP_COGNITO_REGION,
+    "aws_user_pools_id": REACT_APP_USER_POOLS_ID,
+    "aws_user_pools_web_client_id": REACT_APP_USER_POOLS_WEB_CLIENT_ID,
+    "oauth": {},
+    "aws_cognito_username_attributes": [
+        "EMAIL"
+    ],
+    "aws_cognito_social_providers": [],
+    "aws_cognito_signup_attributes": [
+        "EMAIL",
+        "BIRTHDATE",
+        "GENDER",
+        "NAME"
+    ],
+    "aws_cognito_mfa_configuration": "OPTIONAL",
+    "aws_cognito_mfa_types": [
+        "TOTP"
+    ],
+    "aws_cognito_password_protection_settings": {
+        "passwordPolicyMinLength": 8,
+        "passwordPolicyCharacters": [
+            "REQUIRES_LOWERCASE",
+            "REQUIRES_NUMBERS",
+            "REQUIRES_SYMBOLS",
+            "REQUIRES_UPPERCASE"
+        ]
+    },
+    "aws_cognito_verification_mechanisms": [
+        "EMAIL"
+    ],
+    "aws_user_files_s3_bucket": REACT_APP_USER_FILES_S3_BUCKET,
+    "aws_user_files_s3_bucket_region": REACT_APP_USER_FILES_S3_BUCKET_REGION,
+    "aws_appsync_graphqlEndpoint": REACT_APP_APPSYNC_GRAPHQLENDPOINT,
+    "aws_appsync_region": REACT_APP_APPSYNC_REGION,
+    "aws_appsync_authenticationType": "AMAZON_COGNITO_USER_POOLS",
+    "aws_appsync_apiKey": REACT_APP_APPSYNC_APIKEY,
+};
+
+
+
 Amplify.configure(awsExports);
 
 const initialState = { name: '12 Kombuchas', description: 'R$109,90' }

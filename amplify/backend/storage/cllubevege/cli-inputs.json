@@ -1,0 +1,16 @@
+{
+  "resourceName": "cllubevege",
+  "policyUUID": "0da29356",
+  "bucketName": "clubevegefa1d80f815074f5d9dd66cd6fc3ab7d3",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "READ"
+  ],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}
