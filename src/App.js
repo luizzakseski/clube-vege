@@ -7,11 +7,11 @@ import { withAuthenticator, Button, Heading } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
 
 const awsExports = {
-    "aws_project_region": REACT_APP_PROJECT_REGION,
-    "aws_cognito_identity_pool_id": REACT_APP_COGNITO_IDENTITY_POOL_ID,
-    "aws_cognito_region": REACT_APP_COGNITO_REGION,
-    "aws_user_pools_id": REACT_APP_USER_POOLS_ID,
-    "aws_user_pools_web_client_id": REACT_APP_USER_POOLS_WEB_CLIENT_ID,
+    "aws_project_region": env.process.env.REACT_APP_PROJECT_REGION,
+    "aws_cognito_identity_pool_id": process.env.REACT_APP_COGNITO_IDENTITY_POOL_ID,
+    "aws_cognito_region": process.env.REACT_APP_COGNITO_REGION,
+    "aws_user_pools_id": process.env.REACT_APP_USER_POOLS_ID,
+    "aws_user_pools_web_client_id": process.env.REACT_APP_USER_POOLS_WEB_CLIENT_ID,
     "oauth": {},
     "aws_cognito_username_attributes": [
         "EMAIL"
@@ -39,12 +39,12 @@ const awsExports = {
     "aws_cognito_verification_mechanisms": [
         "EMAIL"
     ],
-    "aws_user_files_s3_bucket": REACT_APP_USER_FILES_S3_BUCKET,
-    "aws_user_files_s3_bucket_region": REACT_APP_USER_FILES_S3_BUCKET_REGION,
-    "aws_appsync_graphqlEndpoint": REACT_APP_APPSYNC_GRAPHQLENDPOINT,
-    "aws_appsync_region": REACT_APP_APPSYNC_REGION,
+    "aws_user_files_s3_bucket": process.env.REACT_APP_USER_FILES_S3_BUCKET,
+    "aws_user_files_s3_bucket_region": process.env.REACT_APP_USER_FILES_S3_BUCKET_REGION,
+    "aws_appsync_graphqlEndpoint": process.env.REACT_APP_APPSYNC_GRAPHQLENDPOINT,
+    "aws_appsync_region": process.env.REACT_APP_APPSYNC_REGION,
     "aws_appsync_authenticationType": "AMAZON_COGNITO_USER_POOLS",
-    "aws_appsync_apiKey": REACT_APP_APPSYNC_APIKEY,
+    "aws_appsync_apiKey": process.env.REACT_APP_APPSYNC_APIKEY,
 };
 
 
