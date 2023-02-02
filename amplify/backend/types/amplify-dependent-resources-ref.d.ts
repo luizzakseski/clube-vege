@@ -1,8 +1,17 @@
 export type AmplifyDependentResourcesAttributes = {
+    "api": {
+        "clubevege": {
+            "GraphQLAPIKeyOutput": "string",
+            "GraphQLAPIIdOutput": "string",
+            "GraphQLAPIEndpointOutput": "string"
+        }
+    },
     "auth": {
         "clubevege": {
             "IdentityPoolId": "string",
             "IdentityPoolName": "string",
+            "HostedUIDomain": "string",
+            "OAuthMetadata": "string",
             "UserPoolId": "string",
             "UserPoolArn": "string",
             "UserPoolName": "string",
@@ -10,31 +19,26 @@ export type AmplifyDependentResourcesAttributes = {
             "AppClientID": "string"
         }
     },
-    "storage": {
-        "cllubevege": {
-            "BucketName": "string",
-            "Region": "string"
-        }
-    },
     "function": {
-        "processpayment": {
-            "Name": "string",
-            "Arn": "string",
-            "Region": "string",
-            "LambdaExecutionRole": "string"
-        },
         "createorder": {
             "Name": "string",
             "Arn": "string",
             "Region": "string",
-            "LambdaExecutionRole": "string"
+            "LambdaExecutionRole": "string",
+            "LambdaExecutionRoleArn": "string"
+        },
+        "processpayment": {
+            "Name": "string",
+            "Arn": "string",
+            "Region": "string",
+            "LambdaExecutionRole": "string",
+            "LambdaExecutionRoleArn": "string"
         }
     },
-    "api": {
-        "clubevege": {
-            "GraphQLAPIKeyOutput": "string",
-            "GraphQLAPIIdOutput": "string",
-            "GraphQLAPIEndpointOutput": "string"
+    "storage": {
+        "cllubevege": {
+            "BucketName": "string",
+            "Region": "string"
         }
     }
 }

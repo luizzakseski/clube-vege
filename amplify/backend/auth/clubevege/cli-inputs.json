@@ -2,7 +2,7 @@
   "version": "1",
   "cognitoConfig": {
     "identityPoolName": "testAuthIdentityPool",
-    "allowUnauthenticatedIdentities": true,
+    "allowUnauthenticatedIdentities": false,
     "resourceNameTruncated": "clubevffcd027a",
     "userPoolName": "clubevege",
     "autoVerifiedAttributes": [
@@ -15,7 +15,7 @@
     "smsAuthenticationMessage": "Your login code is {####}",
     "smsVerificationMessage": "Your verification code is {####}",
     "emailVerificationSubject": "Obrigado por se cadastrar no Clube VEGE {####}",
-    "emailVerificationMessage": "Seu cÃ³digo de verificaÃ§Ã£o Ã© : {####}",
+    "emailVerificationMessage": "Seu codigo de verificacao : {####}",
     "defaultPasswordPolicy": false,
     "passwordPolicyMinLength": 8,
     "passwordPolicyCharacters": [
@@ -65,6 +65,13 @@
       ]
     },
     "breakCircularDependency": true,
-    "dependsOn": []
+    "dependsOn": [],
+    "hostedUI": true,
+    "hostedUIDomainName": "d59uy7hwx4s3",
+    "authProvidersUserPool": [
+      "Google"
+    ],
+    "hostedUIProviderMeta": "[{\"ProviderName\":\"Google\",\"authorize_scopes\":\"openid email profile\",\"AttributeMapping\":{\"email\":\"email\",\"birthdate\":\"birthdays\",\"gender\":\"genders\",\"name\":\"name\",\"username\":\"sub\"}}]",
+    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"http://localhost:3000\",\"https://clube.vegekombucha.com.br\"],\"LogoutURLs\":[\"http://localhost:3000\",\"https://clube.vegekombucha.com.br\"]}"
   }
 }
