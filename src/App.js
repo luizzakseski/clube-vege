@@ -7,7 +7,7 @@ import { withAuthenticator, Button, Heading } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
 
 const awsExports = {
-    "aws_project_region": env.process.env.REACT_APP_PROJECT_REGION,
+    "aws_project_region": process.env.REACT_APP_PROJECT_REGION,
     "aws_cognito_identity_pool_id": process.env.REACT_APP_COGNITO_IDENTITY_POOL_ID,
     "aws_cognito_region": process.env.REACT_APP_COGNITO_REGION,
     "aws_user_pools_id": process.env.REACT_APP_USER_POOLS_ID,
