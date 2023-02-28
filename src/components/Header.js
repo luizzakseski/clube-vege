@@ -6,7 +6,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 import GlobalStyles from '@mui/material/GlobalStyles';
-import Logo from '../images/logo.png';
+import Logo from '../images/logo2.png';
 
 
 
@@ -16,10 +16,10 @@ function HeaderContent() {
       <GlobalStyles styles={{ ul: { margin: 0, padding: 0, listStyle: 'none' } }} />
       <CssBaseline />
       <AppBar
-        position="static"
+        position="sticky"
         color="default"
         elevation={0}
-        sx={{ borderBottom: (theme) => `1px solid ${theme.palette.divider}` }}
+        sx={{  backgroundColor : '#C8E31F'}}
       >
         <Toolbar sx={{ flexWrap: 'wrap' }}>
         <Link
@@ -28,10 +28,10 @@ function HeaderContent() {
               href="/#"
               sx={{ my: 0.1, mx: 0.2 }}
             >
-        <img src={Logo} width="80" height="80" />
+        <img src={Logo} width="180" height="80" />
         </Link>
           <Typography variant="h6" color="inherit" noWrap sx={{ flexGrow: 1 }}>
-            Vege Kombucha
+           
           </Typography>
           <nav>
             <Link

@@ -1,24 +1,12 @@
 import * as React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
-import Typography from '@mui/material/Typography';
-import Link from '@mui/material/Link';
 import GlobalStyles from '@mui/material/GlobalStyles';
-import Container from '@mui/material/Container';
+import Box from '@mui/material/Box';
 
 import Header from '../components/Header';
-
-function Copyright(props) {
-  return (
-    <Typography variant="body2" color="text.secondary" align="center" {...props}>
-      {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
-        lalzakseski
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
+import main from '../images/main.png';
+import main2 from '../images/main2.png';
+import main3 from '../images/main3.png';
 
 
 
@@ -29,20 +17,22 @@ function HomeContent() {
       <CssBaseline />
       <Header />
       {/* Hero unit */}
-      <Container disableGutters maxWidth="sm" component="main" sx={{ pt: 8, pb: 6 }}>
-        <Typography
-          component="h1"
-          variant="h2"
-          align="center"
-          color="text.primary"
-          gutterBottom
-        >
-          VEGE Kombucha
-        </Typography>
-        <Typography variant="h5" align="center" color="text.secondary" component="p">
-          A bebida que vai te fazer transcender seus limites
-        </Typography>
-      </Container>
+      <Box sx={{ flexGrow: 1, backgroundColor: '#C8E31F' , display: 'flex', justifyContent: 'center', alignItems:'center' }}>
+    
+          
+  
+        </Box>
+      <Box sx={{ flexGrow: 1, backgroundColor: '#C8E31F' , display: 'flex', justifyContent: 'center', alignItems:'center' }}>
+    
+            <img src={main2} align='center' />
+  
+        </Box>
+        <Box sx={{ flexGrow: 1, backgroundColor: '#C8E31F' , display: 'flex', justifyContent: 'center', alignItems:'center' }}>
+       
+
+            <img src={main3} align='center' />
+
+        </Box>
       {/* End hero unit */}
       
       {/* Footer */}

@@ -2,6 +2,7 @@
 import React, { Component } from 'react'
 import {Routes,Route } from 'react-router-dom'
 
+
 import Home from './pages/Home'
 import Clube from './pages/Clube'
 import AVege from './pages/AVege'
